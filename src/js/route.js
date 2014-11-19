@@ -2,29 +2,49 @@
     'use strict';
 
     define([
-        'controllers/revealController'
-    ], function (revealController) {
+        'controllers/revealController',
+        'controllers/print-pdf-controller'
+    ], function (revealController, printPdfController) {
         return function ($routeProvider) {
+
+            var vendor_dir = 'bower_components/';
+
             $routeProvider.
                 when('/home', {
                     templateUrl: 'src/templates/home.html',
                     css: [
                         'src/css/main.css',
-                        'bower_components/bootstrap/dist/css/bootstrap.css'
-                    ],
-                    controller: function () {}
+                        vendor_dir + '/bootstrap/dist/css/bootstrap.css'
+                    ]
                 }).
-                when('/introduction', {
-                    templateUrl: 'src/templates/introduction.html',
+                when('/slides/:slideName', {
+                    templateUrl: function ($route) {
+                        return 'src/templates/' + $route.slideName + '.html';
+                    },
                     css: [
                         'src/css/reveal.css',
-                        'bower_components/components-revealjs/css/reveal.css',
-                        'bower_components/components-revealjs/css/theme/sky.css'
+                        vendor_dir + 'components-revealjs/css/theme/sky.css',
+                        vendor_dir + 'components-revealjs/css/reveal.css',
+                        vendor_dir + 'bootstrap/dist/css/bootstrap.css'
                     ],
                     controller: revealController
                 }).
+                // Adding the second parameter, it adds the print style-sheet
+                when('/slides/:slideName/:pdf', {
+                    templateUrl: function ($route) {
+                        return 'src/templates/' + $route.slideName + '.html';
+                    },
+                    css: [
+                        'src/css/reveal.css',
+                        vendor_dir + 'components-revealjs/css/reveal.css',
+                        vendor_dir + 'bootstrap/dist/css/bootstrap.css'
+                    ],
+                    controller: printPdfController
+                }).
                 otherwise({
-                    redirectTo: '/home'
+                    redirectTo: function () {
+                        return '/home';
+                    }
                 });
         };
     });
