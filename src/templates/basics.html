@@ -1,0 +1,185 @@
+<div class="slides">
+    <section>
+        <h3>Concetti di base dell'Informatica</h3>
+        <ul>
+            <li>Cos'è un algoritmo</li>
+            <li>Cos'è un programma/software</li>
+            <li>Rappresentazione dei dati</li>
+        </ul>
+    </section>
+    <section>
+        <section>
+            <h3>Cos'è un algoritmo</h3>
+            <ul>
+                <li>Un algoritmo è un procedimento formale che risolve un determinato problema attraverso un numero finito di passi.</li>
+                <li>Anche una ricetta di cucina è un algoritmo.</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Un algoritmo deve avere le seguenti caratteristiche:</h3>
+            <ul>
+                <li>Finito: il numero di istruzioni elementari da eseguire non può essere infinito.</li>
+                <li>Non ambiguo: ogni istruzione deve essere definita in modo preciso ed univoco, senza alcuna ambiguità sul significato dell'operazione</li>
+                <li>Eseguibile: deve esistere un agente di calcolo in grado di eseguire ogni istruzione in un tempo finito.</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Approccio informatico</h3>
+            <ul>
+                <li>Un algoritmo può essere descritto attraverso l'uso di un diagramma di flusso o ricorrendo a uno pseudocodice.</li>
+                <li>nella fase di programmazione l'algoritmo così scritto verrà tradotto in linguaggio di programmazione a opera di un programmatore sotto forma di codice sorgente dando vita al programma che sarà eseguito dal calcolatore.</li>
+            </ul>
+        </section>
+    </section>
+    <section>
+        <section>
+            <h3>Cos'è un programma in informatica?</h3>
+            <ul>
+                <li>Un programma è la codifica di un algoritmo in un certo linguaggio di programmazione</li>
+                <li>&Egrave; un insieme di linee di codice.</li>
+                <li>Ogni programma lavora su di una serie di informazioni che costituiscono l'input</li>
+                <li>I risultati forniti dal programma vengono detti output.</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Codice sorgente</h3>
+            <pre>
+(function () {
+    // dichiarazione delle variabili di input
+    var olio = prompt('Inserisci olio (litri)', '');
+    var olive = prompt('Inserisci olive (quintali)', '');
+
+    // calcolo della resa
+    var resa;
+    resa = olio / olive;
+
+    // output
+    alert('La resa è: ' + resa + 'litri per quintale di olive');
+}());
+            </pre>
+        </section>
+    </section>
+    <section>
+        <section>
+            <h3>Cos'è un prodotto software</h3>
+            <ul>
+                <li>&Egrave; un prodotto utilizzato da persone diverse da chi lo ha implementato.</li>
+                <li>Contiene un manuale utente.</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Classificazione</h3>
+            <ul>
+                <li>I software possono essere classificati in base a diverse loro caratteristiche:
+                    <ul>
+                        <li>funzione (videoscrittura, foglio elettronico, grafica, sistema operativo, browser)</li>
+                        <li>grado di apertura della licenza (software libero o software proprietario)</li>
+                        <li>tipo di interfaccia utente visiva (testuale o grafica, modalità touchscreen);</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h3>Licenze d'utilizzo e distribuzione</h3>
+            <ul>
+                <li>La licenza d'uso è un documento che accompagna il software e specifica i diritti e i doveri di chi lo riceve e di chi lo diffonde.</li>
+                <li>Tutte le licenze d'uso traggono il loro valore legale dalle norme sul diritto d'autore (il copyright).</li>
+                <li>Esistono licenze libere, le licenze Open Source e licenze proprietarie.</li>
+            </ul>
+        </section>
+    </section>
+    <section>
+        <section>
+            <h3>Codifica Binaria</h3>
+            <ul>
+                <li>Un computer è un'apparecchiatura elettronica che ha accesso solo a DUE stati:
+                    <ul>
+                        <li>Transistors (Conduttivi o no)</li>
+                        <li>Nastri Magnetici (Magnetizzati in un verso o un altro)</li>
+                        <li>Schede perforate (Fori in determinati punti o no)</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h3>I motivi di questa scelta sono i seguenti:</h3>
+            <ul>
+                <li>Alta tolleranza agli errori: non ci interessa conoscere ad esempio l'intensità della corrente presente in un transistor.</li>
+                <li>Circuiti più semplici, tali da poter essere costruiti a basso costo.</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Bit, Byte, Word</h3>
+            <ul>
+                <li>Bit = Binary digit (cifra binaria (1/0)), è l'unità informativa più elementare presente in un Calcolatore.</li>
+                <li>Byte = 8 bit, raggruppamento di 8 bit.</li>
+                <li>Word (Parola), raggruppamento di 16 bit o 2 byte.</li>
+            </ul>
+            <img src="src/images/bit-byte-word.jpg">
+        </section>
+        <section>
+            <h3>Caratteri alfanumerici</h3>
+            <ul>
+                <li>I caratteri alfanumerici sono l'insieme delle lettere dell'alfabeto latino e dei numeri arabi.</li>
+                <li>Appartengono a quest'insieme le lettere minuscole dalla a alla z, le maiuscole dalla A alla Z e i numeri da 0 a 9.</li>
+                <li>Esempio di caratteri non alfanumerici sono: &amp; &apos; &quot; &gt; &lt;
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h3>Codifica ASCII</h3>
+            <ul>
+                <li>Caratteri di comando: rappresentano un operazione da eseguire, ad esempio "andare a capo".</li>
+                <li>Caratteri alfanumerici: lettere (maiuscole, da "A" a "Z", e minuscole da "a" a "z") e cifre (da "0" a "9").</li>
+                <li>Simboli: punteggiatura, operatori aritmetici e altri simboli di uso comune (ASCII esteso).</li>
+                <li>Esempio: la lettera "A" corrisponde alla sequenza binaria 01000001</li>
+            </ul>
+        </section>
+        <section>
+            <img src="src/images/ASCII-Table-wide.svg">
+        </section>
+        <section>
+            <h3>Codifica delle immagini 1/2</h3>
+            <ul>
+                <li>Le immagini sono informazioni continue in tre dimensioni: due spaziali (x,y) ed una colorimetrica.</li>
+                <li>Per codificarle occorre operare tre discretizzazioni.</li>
+                <li>Le due discretizzazioni spaziali riducono l'immagine ad una matrice di punti colorati, detti pixel.</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Codifica dell'immagine 2/2</h3>
+            <ul>
+                <li>La terza discretizzazione limita l'insieme di colori che ogni pixel può assumere.</li>
+                <li>Il modo più elementare per rappresentare un'immagine consiste nel rappresentare il colore di ogni pixel.</li>
+                <li>Il numero di bit necessari a rappresentare ogni pixel dipende dal numero di diversi colori disponibili.</li>
+                <li>Un byte consente di rappresentare 256 colori.</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Codifica RGB</h3>
+            <ul>
+                <li>Codifica RGB (Red, Green, Blu – Rosso, Verde, Blu ovvero i tre colori primari).</li>
+                <li>Ogni pixel viene rappresentato con una combinazione dei tre colori</li>
+                <li>Per ogni colore primario si usa un certo numero di bit per rappresentarne la gradazione (la "quantitaà")</li>
+                <li>Ad esempio, utilizzando 8 bit per colore primario, otteniamo 256 diverse gradazioni, ovvero 256 x 256 x 256 = 16 777 216 colori diversi.</li>
+                <li>In questo caso un pixel richiede tre byte di informazione</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Pixels</h3>
+            <ul>
+                <li>Un'immagine a 256 colori è una sequenza di byte.</li>
+            </ul>
+            <img src="src/images/pixel.svg">
+        </section>
+        <section>
+            <h3>Codifica del video</h3>
+            <ul>
+                <li>Un video viene codificato con una sequenza di immagini che si susseguono ad una velocita' costante nel tempo.</li>
+                <li>Per un fenomeno chiamato "persistenza della visione" il cervello umano interpreta una sequenza di immagini che si succedono come un flusso in movimento.</li>
+                <li>la retina dell'occhio umano ha la capacità di trattenere l'immagine per qualche frazione di secondo anche dopo che l'immagine stessa non era più visibile (1/50 di secondo).</li>
+                <li>La velocità a cui si susseguono i fotogrammi è misurata in fotogrammi al secondo (FPS).</li>
+            </ul>
+        </section>
+    </section>
+</div>

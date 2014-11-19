@@ -2,6 +2,13 @@
     text-transform: none;
 }
 
+.reveal .media img {
+    border: none;
+    margin: 10px;
+    max-height: none;
+    max-width: none;
+}
+
 .reveal table.table-confronto td,
 .reveal table.table-confronto th {
     font-size: 20pt;
