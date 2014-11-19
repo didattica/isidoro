@@ -1,31 +1,27 @@
-(function () {
+(function (window, define) {
     'use strict';
 
     define([
         'revealjs'
-    ], function () {
+    ], function (Reveal) {
 
         var revealConfig = {
-            // Display controls in the bottom right corner
-            controls: true,
-            // Display a presentation progress bar
-            progress: true,
-            // Display the page number of the current slide
-            slideNumber: false,
-            // Push each slide change to the browser history
             history: false,
-            // Enable keyboard shortcuts for navigation
-            keyboard: true,
-            // Enable the slide overview mode
-            overview: false,
-            // Vertical centering of slides
-            center: true,
-            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-            transition: Reveal.getQueryHash().transition || 'default'
-        }
+            keyboard: {
+                13: 'next', // go to the next slide when the ENTER key is pressed
+                27: function () {
+                    window.history.back();
+                }, // do something custom when ESC is pressed
+                32: function () {
+                    window.location.href = window.location.href + '/pdf';
+                } //  when SPACE is pressed it adds a print stylesheet
+            },
+            progress: true, // Display a presentation progress bar
+            touch: true // Enables touch navigation on devices with touch input
+        };
 
         return function () {
             Reveal.initialize(revealConfig);
         };
     });
-}(this.define));
+}(this, this.define));

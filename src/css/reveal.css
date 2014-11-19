@@ -1,3 +1,8 @@
 .reveal h2, .reveal h3 {
     text-transform: none;
 }
+
+.reveal table.table-confronto td,
+.reveal table.table-confronto th {
+    font-size: 20pt;
+}
