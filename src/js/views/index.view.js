@@ -2,9 +2,8 @@
     'use strict';
 
     define([
-        'text!../../templates/index.html',
-        '../controllers/revealController'
-    ], function (indexTemplate, revealController) {
+        'text!../../templates/index.html'
+    ], function (indexTemplate) {
 
         var vendor_dir = 'bower_components/';
 
@@ -12,8 +11,8 @@
             url: '/',
             data: {
                 css: [
-                    'src/css/main.css',
-                    vendor_dir + '/bootstrap/dist/css/bootstrap.css'
+                    vendor_dir + '/bootstrap/dist/css/bootstrap.css',
+                    'src/css/main.css'
                 ]
             },
             views: {

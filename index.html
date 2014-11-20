@@ -5,7 +5,10 @@
         <script data-main="src/js/main" src="bower_components/requirejs/require.js"></script>
     </head>
     <body>
-        <div ui-view="slides" class="reveal"></div>
-        <div ui-view="index"></div>
+        <div class="home" ui-view="index"></div>
+        <div class="reveal">
+            <div class="slides" ui-view="slides">
+            </div>
+        </div>
     </body>
 </html>

@@ -1,4 +1,4 @@
-(function (window, define) {
+(function (window, define, document) {
     'use strict';
 
     define([
@@ -8,10 +8,10 @@
         var revealConfig = {
             history: false,
             keyboard: {
-                13: 'next', // go to the next slide when the ENTER key is pressed
+                13: 'next', // Go to the next slide when the ENTER key is pressed
                 27: function () {
                     window.history.back();
-                }, // do something custom when ESC is pressed
+                }, // Do something custom when ESC is pressed
                 32: function () {
                     // TODO the print stylesheet does not make all pages printable because of Reveal.initialize
                     var link = document.createElement('link');
@@ -30,4 +30,4 @@
             Reveal.initialize(revealConfig);
         };
     });
-}(this, this.define));
+}(this, this.define, this.document));

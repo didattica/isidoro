@@ -13,7 +13,7 @@
                 .state('index', indexView)
                 .state('introduction', introductionView)
                 .state('basics', basicsView)
-                .state('hardware', hardwareView)
+                .state('hardware', hardwareView);
         };
     });
 }(this.define));
