@@ -4,16 +4,16 @@
     define([
         'angular',
         'route',
-        'angularRouteStyles',
-        'angularRoute',
+        'angularUiRouter',
+        'uiRouterStyles',
         'jquery'
     ], function (angular, route) {
         var app = angular.module('isidoroApp', [
-            'ngRoute',
-            'routeStyles'
+            'ui.router',
+            'uiRouterStyles'
         ]);
 
-        app.config(['$routeProvider', route]);
+        app.config(route);
         angular.element().ready(function () {
             angular.bootstrap(document, ['isidoroApp']);
         });

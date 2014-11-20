@@ -7,22 +7,20 @@
         urlArgs: 'bust=' + Date.now(),
         paths: {
             angular: vendor_dir + 'angular/angular',
-            angularRoute: vendor_dir + 'angular-route/angular-route',
-            angularRouteStyles: vendor_dir + 'angular-route-styles/route-styles',
+            angularUiRouter: vendor_dir + 'angular-ui-router/release/angular-ui-router',
+            uiRouterStyles: vendor_dir + 'angular-ui-router-styles/ui-router-styles',
             jquery: vendor_dir + 'jquery/dist/jquery.min',
-            revealjs: vendor_dir + 'components-revealjs/js/reveal'
+            revealjs: vendor_dir + 'components-revealjs/js/reveal',
+            text: vendor_dir + 'text/text'
         },
         shim: {
             revealjs: {
                 exports: 'Reveal'
             },
             angular : {exports : 'angular'},
-            angularRouteStyles: {
-                deps: ['angular'],
-                exports: 'routeStyles'
-            },
             jquery: {exports: 'jquery'},
-            angularRoute: ['angular']
+            angularUiRouter: ['angular'],
+            uiRouterStyles: ['angular']
         },
         // kick start application
         deps: ['app']
