@@ -26,8 +26,10 @@
             touch: true // Enables touch navigation on devices with touch input
         };
 
-        return function () {
-            Reveal.initialize(revealConfig);
+        return function ($scope) {
+            $scope.$on('$viewContentLoaded', function () {
+                Reveal.initialize(revealConfig);
+            });
         };
     });
 }(this, this.define, this.document));
