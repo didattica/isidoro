@@ -2,8 +2,9 @@
     'use strict';
 
     define([
+        '../controllers/index.controller',
         'text!../../templates/index.html'
-    ], function (indexTemplate) {
+    ], function (indexController, indexTemplate) {
 
         var vendor_dir = 'bower_components/';
 
@@ -15,11 +16,8 @@
                     'src/css/main.css'
                 ]
             },
-            views: {
-                index: {
-                    template: indexTemplate
-                }
-            }
+            template: indexTemplate,
+            controller: indexController
         };
     });
 }(this.define));

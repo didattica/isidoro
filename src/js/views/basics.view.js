@@ -2,9 +2,8 @@
     'use strict';
 
     define([
-        'text!../../templates/basics.html',
-        '../controllers/revealController'
-    ], function (basicTemplate, revealController) {
+        'text!../../templates/basics.html'
+    ], function (basicTemplate) {
 
         var vendor_dir = 'bower_components/';
 
@@ -12,18 +11,10 @@
             url: '/basics',
             data: {
                 css: [
-                    'src/css/reveal.css',
-                    vendor_dir + 'bootstrap/dist/css/bootstrap.css',
-                    vendor_dir + 'components-revealjs/css/reveal.css',
                     vendor_dir + 'components-revealjs/css/theme/beige.css'
                 ]
             },
-            views: {
-                slides: {
-                    template: basicTemplate,
-                    controller: revealController
-                }
-            }
+            template: basicTemplate
         };
     });
 }(this.define));

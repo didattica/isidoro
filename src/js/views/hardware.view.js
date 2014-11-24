@@ -1,10 +1,9 @@
-$(function (define) {
+(function (define) {
     'use strict';
 
     define([
         'text!../../templates/hardware.html',
-        '../controllers/revealController'
-    ], function (hardwareTemplate, revealController) {
+    ], function (hardwareTemplate) {
 
         var vendor_dir = 'bower_components/';
 
@@ -12,18 +11,10 @@ $(function (define) {
             url: '/hardware',
             data: {
                 css: [
-                    'src/css/reveal.css',
-                    vendor_dir + 'bootstrap/dist/css/bootstrap.css',
-                    vendor_dir + 'components-revealjs/css/theme/sky.css',
-                    vendor_dir + 'components-revealjs/css/reveal.css'
+                    vendor_dir + 'components-revealjs/css/theme/sky.css'
                 ]
             },
-            views: {
-                slides: {
-                    template: hardwareTemplate,
-                    controller: revealController
-                }
-            }
+            template: hardwareTemplate
         };
     });
 }(this.define));
