@@ -5,10 +5,6 @@
         <script data-main="src/js/main" src="bower_components/requirejs/require.js"></script>
     </head>
     <body>
-        <div class="home" ui-view="index"></div>
-        <div class="reveal">
-            <div class="slides" ui-view="slides">
-            </div>
-        </div>
+        <div ui-view ng-class="class"></div>
     </body>
 </html>
