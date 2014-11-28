@@ -1,0 +1,232 @@
+<section>
+    <h3>Modulo di Informatica</h3>
+    <h3>Software - Sistema Operativo (SO)</h3>
+    <p>
+        <small>Autore: <a href="http://hakim.se">Antonio Pierro</a> / <a href="http://twitter.com/an_pierro">@an_pierro</a></small>
+    </p>
+</section>
+<section>
+    <section>
+        <h3>Indice</h3>
+        <ul>
+            <li>Definizione del sistema operativo (SO);</li>
+            <li>Gestione attività;</li>
+            <li>Prompt dei comandi.</li>
+        </ul>
+    </section>
+</section>
+<section>
+    <section>
+        <h3>Definizione del SO</h3>
+        <ul>
+            <li>Un sistema operativo è un programma che agisce come intermediario tra utente e hardware;</li>
+            <li>In generale non svolge un compito evidente all'utente, ma fornisce funzionalità necessarie alle applicazion;</li>
+            <li>Esempio: stampa un archivio ("file").</li>
+        </ul>
+    </section>
+    <section>
+        <h3>Sistemi operativi</h3>
+        <ul>
+            <li>Esistono vari tipi di sistemi operativi;</li>
+            <li>I principali s.o. per personal computer sono:
+            <ul>
+                <li>Windows di Microsoft;</li>
+                <li>Mac OsX di Apple;</li>
+                <li>Linux, open source.</li>
+            </ul>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h3>Com'è fatto un sistema operativo</h3>
+        <ul>
+            <li>&Egrave; fatto di software, di solito scritto in linguaggio C;</li>
+            <li>&Egrave; molto complesso. Windows XP contiene 40 milioni di linee di codice;</li>
+            <li>Risiede di solito sul disco rigido, in directory specifiche.</li>
+        </ul>
+    </section>
+    <section>
+        <h3>Funzioni del sistema operativo 1/2</h3>
+        <ul>
+            <li>Facilitazione: semplifica l'uso del sistema nascondendo i dettagli di macchina;</li>
+            <li>Esempio: la metafora desktop, che fa somigliare lo spazio di lavoro ad una scrivania.</li>
+        </ul>
+    </section>
+    <section>
+        <h3>Funzioni del sistema operativo 2/2</h3>
+        <ul>
+            <li>Parallelismo: consente di far coesistere più utenti e programmi, che utilizzano a turno risorse e dispositivi;</li>
+            <li>Protezione: fornisce strumenti di sicurezza che proteggono le risorse;</li>
+            <li>Esempio: il SO impedisce che un solo programma usi il processore, o che un utente possa spiare cosa fa un altro utente, o che un programma distrugga i dati di un altro.</li>
+        </ul>
+    </section>
+    <section>
+        <h3>Storia dei sistemi operativi</h3>
+        <ul>
+            <li>(1945-1955) I primi computer erano fatti di valvole e risolvevano problemi di tipo militare;</li>
+            <li>Ogni poche ore si rompeva una valvola;</li>
+            <li>Niente sistema operativo, nè linguaggi;</li>
+            <li>I programmi erano inseriti da console usando interruttori per accendere bit in memoria.</li>
+        </ul>
+    </section>
+</section>
+<section>
+    <section>
+        <h3>Task Manager</h3>
+        <ul>
+            <li>Il sistema operativo windows mette a disposizione un programma (Task Manager o Gestione Attività) che consente di:
+                <ul>
+                    <li>visualizzare informazioni relative a programmi e processi attivi;</li>
+                    <li>monitorarne le prestazioni in termini di uso di memoria e tramite altri indicatori;</li>
+                    <li>accedere a elaborazioni statistiche sulle performance della memoria e della CPU.</li>
+                </ul>
+            </li>
+            <li>Per avviare il programma occorre:
+                <ul>
+                    <li>premere contemporaneamente i tasti ctrl, alt, canc (o del);</li>
+                    <li>nella schermata che comparirà, scegliere la voce "avvia Gestione Attività".</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h3>Analisi delle performance</h3>
+        <ul>
+            <li>La scheda "Prestazioni" del task manager mostra informazioni statistiche, sull'utilizzo della CPU e della mamoria;</li>
+            <li>I due grafici in alto sono relativi alla CPU, i due in bassi sono invece relativi  alla RAM.</li>
+        </ul>
+        <img src="src/images/task-manager.png">
+    </section>
+</section>
+
+<section>
+    <section>
+        <h3>Prompt dei comandi 1/2</h3>
+        <ul>
+            <li>Il prompt dei comandi, o shell, è una funzionalità di Windows che consente agli utenti di eseguire comandi, tra cui quelli MS‐DOS (Microsoft Disk Operating System)</li>
+        </ul>
+        <img src="src/images/ms-dos.png">
+    </section>
+    <section>
+        <h3>Directory di lavoro</h3>
+        <ul>
+            <li>&Egrave; possibile modificare la cartella di lavoro eseguendo il comando cd seguito da:
+                <ul>
+                    <li>un nuovo percorso assoluto, ad esempio digitando: C:\>cd D:\User\Anna;</li>
+                    <li>un percorso relativo alla cartella corrente, ad esempio il comando: C:\>cd Desktop;</li>
+                    <li>due punti singoli, per tornare indietro di un livello: C:\> cd ..</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h3>Comandi per la gestione dei files</h3>
+        <table class="table table-confronto">
+            <tbody>
+                <tr>
+                    <td>dir</td>
+                    <td>visualizza l'elenco dei file e delle directory di una cartella;</td>
+                </tr>
+                <tr>
+                    <td>mkdir nome_cartella</td>
+                    <td>(make directory) crea una cartella a cui viene attribuito il nome specificato;</td>
+                </tr>
+                <tr>
+                    <td>rmdir nome_cartella</td>
+                    <td>rimuove la cartella specificata, ma soltanto se è vuota (ovvero non contiene alcun file nè sottocartelle);</td>
+                </tr>
+                <tr>
+                    <td>del nome_file</td>
+                    <td>rimuove il file specificato;</td>
+                </tr>
+                <tr>
+                    <td>del nome_cartella:</td>
+                    <td>rimuove la cartella specificata e tutti i files che contiene;</td>
+                </tr>
+                <tr>
+                    <td>tree</td>
+                    <td>visualizza attraverso una struttura ad albero la gerarchia di sottocartelle della cartella corrente</td>
+                </tr>
+                <tr>
+                    <td>ECHO</td>
+                    <td>C:> ECHO ciao >hello.txt oppure C:> ECHO come stai? >> hello.txt</td>
+                </tr>
+                <tr>
+                    <td>TYPE</td>
+                    <td>TYPE hello.txt visualizza il contenuto del file</td>
+                </tr>
+                <tr>
+                    <td>HELP</td>
+                    <td>HELP DIR: per ottenere informazioni specifiche sull'utilizzo del comando di interesse.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</section>
+<section>
+    <section>
+        <h3>Tipi di documenti</h3>
+        <img src="src/images/sofware-tipo-documento.png">
+    </section>
+    <section>
+        <h3>I dati</h3>
+        <ul>
+            <li>I dati, siano essi documenti o altro, sono memorizzati in archivi (file);</li>
+            <li>Un file è una sequenza di byte e può rappresentare qualsiasi insieme di dati (numerici, alfabetici, audio, video) in base ad uno o più codici;</li>
+            <li>i file di testo si basano sul codice ASCII.</li>
+        </ul>
+    </section>
+    <section>
+        <h3>Attributi dei file</h3>
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td>Nome</td>
+                    <td>Nome simbolico con cui l'utente può riconoscere il file.</td>
+                </tr>
+                <tr>
+                    <td>Tipo</td>
+                    <td>Stabilisce con quale programma potrebbe essere aperto il programma.</td>
+                </tr>
+                <tr>
+                    <td>Posizione</td>
+                    <td>Indica la poszione all'interno del file di sistema.</td>
+                </tr>
+                <tr>
+                    <td>Dimensione</td>
+                    <td>Numero di byte occupati dal file.</td>
+                </tr>
+                <tr>
+                    <td>Protezione</td>
+                    <td>Diritti di accesso al file per gli utenti del sistema.</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data di creazione e/o di modifica.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</section>
+<section>
+    <section>
+        <h3>La struttura del filesystem</h3>
+        <ul>
+            <li>L'insieme delle informazioni memorizzate sulla memoria di massa è organizzato secondo una struttura che va sotto il nome di filesystem;</li>
+            <li>I sistemi operativi utilizzano i concetti comuni di file e directory;</li>
+            <li>Un file è un insieme di informazioni che possono rappresentare dei dati (un testo, un'immagine, una canzone, un film, ...);</li>
+            <li>Una directory è una sorta di contenitore che può contenere sia file che altre directory.</li>
+        </ul>
+    </section>
+    <section>
+        <h3>Struttura gerarchica ad albero</h3>
+        <ul>
+            <li>Poiché le directory possono contenere sia file che altre directory, si viene a delineare una struttura gerarchica ad albero dell'organizzazione dei file e delle directory, detto directory tree o albero delle directory;</li>
+            <li>Un filesystem è formato quindi dall’insieme dei file e delle directory e dalla loro organizzazione.</li>
+        </ul>
+    </section>
+    <section>
+        <h3>Esempio di albero.</h3>
+        <img src="src/images/file-tree.png">
+    </section>
+</section>
